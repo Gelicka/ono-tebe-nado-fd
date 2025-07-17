@@ -1,17 +1,25 @@
 @font-face {
-  font-family: Raleway;
+  font-family: 'Raleway-Regular';
   src:
-    url(./Raleway-Regular.woff2) format('woff2'),
-    url(./Raleway-Regular.woff) format('woff');
+    url(../fonts/Raleway-Regular.woff2) format('woff2'),
+    url(../fonts/Raleway-Regular.woff) format('woff');
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: Raleway;
+  font-family: 'Raleway-Bold';
   src:
-    url(./Raleway-Bold.woff2) format('woff2'),
-    url(./Raleway-Bold.woff) format('woff');
+    url(../fonts/Raleway-Bold.woff2) format('woff2'),
+    url(../fonts/Raleway-Bold.woff) format('woff');
   font-weight: bold;
   font-display: swap;
 }
+
+/*
+без засечек
+font-family: 'Raleway-Bold', sans-serif;
+с засечками
+font-family: 'Raleway-Regular', serif;
+*/
+
