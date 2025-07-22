@@ -18,9 +18,9 @@
       <div class="menu">
         <nav class="header__menu">
           <ul class="header__links-list">
-            <li class="header__links-list-item_no-bullit">главная</li>
-            <li class="header__links-list-item">посмотреть лоты</li>
-            <li class="header__links-list-item">об аукционе</li>
+            <li class="header__links-list-item  header__links-list-item_no-bullit"><a href="#" class="link-active">главная</a></li>
+            <li class="header__links-list-item header__links-list-item-underline"><a href="#" class="link-active">посмотреть лоты</a></li>
+            <li class="header__links-list-item header__links-list-item-underline"><a href="#" class="link-active">об аукционе</a></li>
           </ul>
         </nav>
       </div>
@@ -28,13 +28,13 @@
       <div class="contacts">
         <address>
           <ul>
-            <li class="spisok_contacts">
+            <li class="address_item">
               <a class="spisok_contacts_underline" href="tel:+99995555555">+9 999 555 5555</a>
             </li>
-            <li class="spisok_contacts">
+            <li class="address_item">
               <a class="spisok_contacts_underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
             </li>
-            <li class="spisok_contacts">
+            <li class="address_item">
               наб. Принсенграхт 263-<br>265. Амстердам
             </li>
           </ul>
@@ -45,12 +45,12 @@
     <main>
       <!--1 секция с изображением красок и надписью "оно тебе надо"-->
       <section>
-        <div class="cover">
-          <div class="cover_block">
-            <div class="title__cover_ono"><h1 class="cover__title">оно</h1></div>
-            <div class="title__cover_tebe"><h1 class="cover__title">тебе</h1></div>
-            <div class="title__cover_nado"><h1 class="cover__title">надо</h1></div>
-          </div>
+        <div class="cover overlay">
+          <h1 class="cover_block">
+            <span class="title__cover_ono cover__title">оно</span>
+            <span class="title__cover_tebe cover__title">тебе</span>
+            <span class="title__cover_nado cover__title">надо</span>
+          </h1>
           <div class="description">
             <div class="text_description-div">
               <p class="text_description">
@@ -75,7 +75,7 @@
 
               <li class="lots__card-list">
                 <a>
-                  <article class="card_type_film lots__card-list_article">
+                  <article class="card_type_film card-style lots__card-list_article overlay">
                     <h3 class="card__title">
                       Фильм режиссёра, который бросил киношколу
                     </h3>
@@ -90,7 +90,7 @@
 
               <li class="lots__card-list">
                 <a>
-                  <article class="card_type_book lots__card-list_article">
+                  <article class="card_type_book card-style lots__card-list_article overlay">
                     <h3 class="card__title">
                       Книга, где описан один скучный день из жизни рекламного
                       агента
@@ -109,7 +109,7 @@
 
               <li class="lots__card-list">
                 <a>
-                  <article class="card_type_picture lots__card-list_article">
+                  <article class="card_type_picture card-style lots__card-list_article overlay">
                     <h3 class="card__title">
                       Картина, которую повторит даже 5-летний сын маминой
                       подруги
@@ -137,20 +137,20 @@
       <section>
         <div class="about">
           <div>
-            <button class="logo__about-column"></button>
-            <img class="logo-column" src="./images/logo-white.svg" alt="логотип">
+            <div class="logo__about-column">
+            <img class="logo-column" src="./images/logo-white.svg" alt="логотип"></div>
           </div>
           <div class="about_column">
             <h2 class="about__title">Об аукционе</h2>
             <div class="description_block">
-              <p class="about__text_invaluable">
+              <p>
                 Здесь вы не встретите очередное пафосное собрание невероятно
                 дорогого антиквариата. Наши лоты вообще не должны были попасть
-                ни на один аукцион. Потому что кому нужен дневник
+                <br>ни на один аукцион. Потому что кому нужен дневник
                 девочки-подростка или картина, которую может нарисовать даже
                 ребёнок? Кому нужны все эти странные вещи, созданные любителями?
               </p>
-              <p class="about__text_unrecognized">
+              <p>
                 Слишком сложные или, наоборот, слишком простые. Опережающие своё
                 время. В пух и прах растерзанные критиками. Непринятые и
                 непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -169,8 +169,8 @@
       <div class="contacts_footer">
         <address>
           <ul class="contacts_footer-ul">
-            <li class="footer__cont-list-item"><a class="footer__menu-list-item-pod" href="+99995555555">+9 999 555 5555</a></li>
-            <li class="footer__cont-list-item"><a class="footer__menu-list-item-pod" href="info@sobaka.ge">info@sobaka.ge</a></li>
+            <li class="footer__cont-list-item"><a class="footer__menu-list-item-pod" href="tel:+99995555555">+9 999 555 5555</a></li>
+            <li class="footer__cont-list-item"><a class="footer__menu-list-item-pod" href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
             <li class="footer__cont-list-item">
               наб. Принсенграхт 263-265. Амстердам
             </li>
@@ -180,29 +180,37 @@
       <div class="menu_footer">
         <nav>
           <ul>
-            <li class="footer__menu-list-item"><a>главная</a></li>
+            <li class="footer__menu-list-item"><a class="footer__menu-list-item-a">главная</a></li>
             <li class="footer__menu-list-item">
-              <a class="footer__menu-list-item-pod">посмотреть лоты</a>
+              <a class="footer__menu-list-item-a footer__menu-list-item-pod">посмотреть лоты</a>
             </li>
             <li class="footer__menu-list-item">
-              <a class="footer__menu-list-item-pod">об аукционе</a>
+              <a class="footer__menu-list-item-a footer__menu-list-item-pod">об аукционе</a>
             </li>
           </ul>
         </nav>
       </div>
 
       <!-- ютуб вк пинтерест гиперссылками -->
-      <div class="button_footer-div">
-        <button class="yt social_network">
-          <img src="./images/yt.svg" alt="youtube">
-        </button>
-        <button class="vk social_network">
-          <img src="./images/vk.svg" alt="вконтакте">
-        </button>
-        <button class="pinterest social_network">
-          <img src="./images/pinterest.svg" alt="pinterest">
-        </button>
-      </div>
+      <ul class="button_footer-div">
+        <li class="link-active-footer">
+          <a class="social_network" href="#">
+            <img class="social_network-img" src="./images/yt.svg" alt="youtube">
+          </a>
+        </li>
+
+        <li class="link-active-footer">
+          <a class="social_network" href="#">
+            <img class="social_network-img" src="./images/vk.svg" alt="вконтакте">
+          </a>
+        </li>
+
+        <li class="link-active-footer">
+          <a class="social_network" href="#">
+            <img class="social_network-img" src="./images/pinterest.svg" alt="pinterest">
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
