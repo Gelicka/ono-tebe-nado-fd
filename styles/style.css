@@ -31,18 +31,9 @@
   padding-bottom: 5.1px;
 }
 
-.header__links-list-item-underline {
-  text-decoration: none; 
-  border-bottom: 1px black solid;
-}
-
-.header__links-list-item_no-bullit {
+.link-active {
   list-style: none;
   text-decoration: none; 
-}
-
-.link-active {
-  text-decoration: none;
 }
 
 .header__logo {
@@ -61,7 +52,7 @@
   line-height: 1.3;
 }
 
-.spisok_contacts_underline {
+.list_contacts_underline {
   text-decoration: none; 
   border-bottom: 1px black solid;
 }
@@ -100,18 +91,18 @@
   text-transform: uppercase;
 }
 
-.title__cover_ono {
+.cover__word_position-left {
   display: block;
   padding-left: 50px;
 }
 
-.title__cover_tebe {
+.cover__word_position-center {
   display: block;
   padding-top: 15px;
   padding-left: 380.5px;
 }
 
-.title__cover_nado {
+.cover__word_position-right {
   display: block;
   padding-top: 18px;
   padding-left: 663px;
@@ -161,16 +152,17 @@
                             /* 2 секция */
 .lots {
   width: 1052px;
-  padding-top: 170px;
+  padding-top: 180px;
   margin: 0 auto;
 }
 
 .lots__heading {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 50px;
+  font-weight: bolder;
+  font-size: 40px;
   padding-left: 40px;
   padding-bottom: 27px;
+  text-transform: uppercase;
 }
 
 .card {
@@ -254,8 +246,8 @@
   display: grid;
   grid-template-columns: 359px 693px; /* 2 колонки */
   width: 1052px;
-  min-height: 595px;
   margin-top: 120px;
+  padding-bottom: 5px;
 }
 
 .logo-column {
@@ -298,7 +290,7 @@
                             /* footer */
 .footer {
   width: 1100px;
-  min-height: 180px;
+  padding-bottom: 85px;
   margin-top: 180px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -315,14 +307,14 @@
   padding-left: 25px;
   display: flex;
   justify-content: center;
-  gap: 36px;
+  gap: 45px;
   list-style-type: none;
 }
 
 .social_network-img {
   align-items: center;
-  width: 60px;
-  height: 48px;
+  width: 50px;
+  min-height: 48px;
 }
 
 .footer__menu-list-item {
@@ -333,19 +325,8 @@
 
 .footer__cont-list-item {
   padding-left: 50px;
-  list-style-type: none;
-  font-family: 'Raleway', sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
-.footer__menu-list-item-pod {
-  text-decoration: none; 
-  border-bottom: 1px black solid;
-}
 
 .contacts_footer {
   width: 290px;
