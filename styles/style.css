@@ -69,8 +69,7 @@
 
 .cover_block {
   display: block;
-  height: 385px;
-  padding-top: 165px;
+  padding-top: 50px;
 }
 
 .overlay::after {
@@ -89,22 +88,24 @@
   color: white;
   font-size: 100px;
   text-transform: uppercase;
+  padding-top: 65px;
 }
 
 .cover__word_position-left {
   display: block;
   padding-left: 50px;
+  padding-top: 115px;
 }
 
 .cover__word_position-center {
   display: block;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-left: 380.5px;
 }
 
 .cover__word_position-right {
   display: block;
-  padding-top: 18px;
+  padding-top: 17px;
   padding-left: 663px;
 }
 
@@ -112,7 +113,7 @@
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   width: 1050px;
-  padding-top: 270px;
+  padding-top: 105px;
   padding-left: 50px;
   text-transform: uppercase;
   color: white;
